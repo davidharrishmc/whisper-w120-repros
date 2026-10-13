@@ -1,0 +1,1 @@
+spike --instructions=100000000 --priv=m --triggers=0 --isa=rv32i_zicsr

@@ -1,0 +1,1 @@
+--instructions=100000000 --triggers=0 --isa=rv64ih_ssdbltrp_zicsr

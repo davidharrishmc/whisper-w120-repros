@@ -1,0 +1,3 @@
+poke c hgeie 0xffffffffffffffff
+peek c hgeie
+quit

@@ -1,0 +1,1 @@
+--priv=m --triggers=0 --isa=rv64i_zbkb_zicsr

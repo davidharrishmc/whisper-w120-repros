@@ -1,0 +1,228 @@
+{
+  "clint": "0x2000000",
+  "address_translation_pmms": [
+    "off"
+  ],
+  "isa": "rv32i_zicsr_zifencei",
+  "all_inst_addr_trigger": "false",
+  "cancel_lr_on_trap": false,
+  "clear_mtval_on_ebreak": false,
+  "clear_mtval_on_illegal_instruction": false,
+  "clear_tinst_on_cbo_flush": false,
+  "clear_tinst_on_cbo_inval": false,
+  "enable_pmp_na4": false,
+  "enable_pmp_tor": true,
+  "indexed_nmi": false,
+  "memmap": {
+    "pma": [
+      {
+        "attribs": [],
+        "high": 1023,
+        "low": 0
+      },
+      {
+        "attribs": [
+          "read",
+          "write",
+          "exec",
+          "amo",
+          "rsrv",
+          "idempotent",
+          "cacheable",
+          "misal_ok",
+          "mag16"
+        ],
+        "high": "0xffffffff",
+        "low": "0x80000000"
+      }
+    ],
+    "consoleio": "0x10000000",
+    "Comment": "Set physical memory size to be 32-bits",
+    "size": "0x100000000"
+  },
+  "csr": {
+    "vstart": {
+      "mask": "0xff",
+      "poke_mask": "0xff"
+    },
+    "mstatus": {
+      "reset": "0x1800",
+      "mask": "0x88",
+      "poke_mask": "0x80000088"
+    },
+    "mie": {
+      "mask": "0x888",
+      "poke_mask": "0x888"
+    },
+    "mip": {
+      "mask": "0x0",
+      "poke_mask": "0x888"
+    },
+    "misa": {
+      "reset": "0x40000100"
+    }
+  },
+  "misaligned_has_priority": false,
+  "num_mmode_perf_regs": 0,
+  "physical_memory_protection_grain": "0x1000",
+  "reservation_bytes": 64,
+  "reset_vec": "0x80000000",
+  "trigger_actions": [
+    "raisebreak",
+    "enterdebug",
+    "starttrace",
+    "stoptrace",
+    "emittrace"
+  ],
+  "aplic": {
+    "num_sources": 2,
+    "domains": {
+      "maplic": {
+        "base": "0x0c000000",
+        "size": "0x00100000",
+        "parent": null,
+        "is_machine": true,
+        "hart_indices": [
+          0
+        ],
+        "child_index": 0
+      },
+      "saplic": {
+        "base": "0x0d000000",
+        "size": "0x00100000",
+        "parent": "maplic",
+        "is_machine": false,
+        "hart_indices": [
+          0
+        ],
+        "child_index": 0
+      }
+    }
+  },
+  "vector": {
+    "always_mark_dirty": true,
+    "bytes_per_vec": 32,
+    "fp_usum_nan_canonicalize": [
+      "e16",
+      "e32",
+      "e64"
+    ],
+    "legalize_for_egs": false,
+    "legalize_vsetvl_avl": true,
+    "legalize_vsetvli_avl": true,
+    "mask_agnostic_policy": "ones",
+    "max_bytes_per_elem": 8,
+    "max_bytes_per_lmul": {
+      "mf2": 4,
+      "mf4": 2,
+      "mf8": 1
+    },
+    "min_bytes_per_elem": 1,
+    "partial_segment_update": false,
+    "tail_agnostic_policy": "ones",
+    "trap_invalid_vtype": false,
+    "trap_non_zero_vstart": true,
+    "tt_clear_tval_vl_egs": false,
+    "tt_fp_usum_tree_reduction": [
+      "e16",
+      "e32",
+      "e64"
+    ],
+    "update_whole_mask": true
+  },
+  "wfi_timeout": 0,
+  "trigger_use_tcontrol": false,
+  "trigger_types": [
+    "none",
+    "disabled",
+    "mcontrol6",
+    "icount",
+    "itrigger",
+    "etrigger"
+  ],
+  "triggers": [
+    {
+      "reset": [
+        0,
+        0,
+        0,
+        "0x8078"
+      ],
+      "mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ],
+      "poke_mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ]
+    },
+    {
+      "reset": [
+        0,
+        0,
+        0,
+        "0x8078"
+      ],
+      "mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ],
+      "poke_mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ]
+    },
+    {
+      "reset": [
+        0,
+        0,
+        0,
+        "0x8078"
+      ],
+      "mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ],
+      "poke_mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ]
+    },
+    {
+      "reset": [
+        0,
+        0,
+        0,
+        "0x8078"
+      ],
+      "mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ],
+      "poke_mask": [
+        "0xf9ffffff",
+        "0xffffffff",
+        "0x0",
+        0
+      ]
+    }
+  ],
+  "address_translation_modes": [
+    "bare"
+  ]
+}
