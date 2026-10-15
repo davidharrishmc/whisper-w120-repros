@@ -32,3 +32,10 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | 38 | [whisper#175](https://github.com/tenstorrent/whisper/issues/175) | [whisper-translation-modes-xlen](whisper-translation-modes-xlen/) |
 | 39 | [whisper#177](https://github.com/tenstorrent/whisper/issues/177) | [whisper-vector-params](whisper-vector-params/) |
 | 44 | [whisper#183](https://github.com/tenstorrent/whisper/issues/183) | [whisper-napot-n-without-svnapot](whisper-napot-n-without-svnapot/) |
+
+## Other reproducers
+
+| Issue | Directory |
+|---|---|
+| [whisper#196](https://github.com/tenstorrent/whisper/issues/196) | [whisper-tcontrol-trap-into-m](whisper-tcontrol-trap-into-m/) |
+| [whisper#197](https://github.com/tenstorrent/whisper/issues/197) | [whisper-tcontrol-medeleg3](whisper-tcontrol-medeleg3/) |
