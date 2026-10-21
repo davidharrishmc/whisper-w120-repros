@@ -1,0 +1,10 @@
+== notime.json
+Error: Failed stop: Hart 0: write to to-host
+exit code 1
+hip reads: 128; last hip value: 0000000000000000
+tohost: 000000000000000d
+== time.json
+Successful stop: Hart 0: write to to-host
+exit code 0
+hip reads: 2; last hip value: 0000000000000040
+tohost: 0000000000000001

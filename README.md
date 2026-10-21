@@ -39,3 +39,4 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 |---|---|
 | [whisper#196](https://github.com/tenstorrent/whisper/issues/196) | [whisper-tcontrol-trap-into-m](whisper-tcontrol-trap-into-m/) |
 | [whisper#197](https://github.com/tenstorrent/whisper/issues/197) | [whisper-tcontrol-medeleg3](whisper-tcontrol-medeleg3/) |
+| - | [whisper#ISSUE](https://github.com/tenstorrent/whisper/issues/ISSUE) | [whisper-vstip-notime](whisper-vstip-notime/) |
