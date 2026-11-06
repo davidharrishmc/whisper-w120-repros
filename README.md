@@ -44,4 +44,4 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#227](https://github.com/tenstorrent/whisper/issues/227) | [whisper-h-tvm-virtual](whisper-h-tvm-virtual/) |
 | [whisper#228](https://github.com/tenstorrent/whisper/issues/228) | [whisper-h-sret-vu-sdt](whisper-h-sret-vu-sdt/) |
 | [whisper#229](https://github.com/tenstorrent/whisper/issues/229) | [whisper-h-hfence-rs2](whisper-h-hfence-rs2/) |
-| [whisper#229](https://github.com/tenstorrent/whisper/issues/229) (VMIDLEN < VMIDMAX) | [whisper-h-hfence-vmidlen7](whisper-h-hfence-vmidlen7/) | [whisper-h-hfence-vmidlen7.tar.gz](whisper-h-hfence-vmidlen7.tar.gz) |
+| [whisper#229](https://github.com/tenstorrent/whisper/issues/229) (VMIDLEN < VMIDMAX) | [whisper-h-hfence-vmidlen7](whisper-h-hfence-vmidlen7/) |
