@@ -41,3 +41,6 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#197](https://github.com/tenstorrent/whisper/issues/197) | [whisper-tcontrol-medeleg3](whisper-tcontrol-medeleg3/) |
 | - | [whisper#220](https://github.com/tenstorrent/whisper/issues/220) | [whisper-vstip-notime](whisper-vstip-notime/) |
 | [whisper#225](https://github.com/tenstorrent/whisper/issues/225) | [whisper-hfence-gvma-rv32](whisper-hfence-gvma-rv32/) |
+| [whisper#227](https://github.com/tenstorrent/whisper/issues/227) | [whisper-h-tvm-virtual](whisper-h-tvm-virtual/) |
+| [whisper#228](https://github.com/tenstorrent/whisper/issues/228) | [whisper-h-sret-vu-sdt](whisper-h-sret-vu-sdt/) |
+| [whisper#229](https://github.com/tenstorrent/whisper/issues/229) | [whisper-h-hfence-rs2](whisper-h-hfence-rs2/) |
