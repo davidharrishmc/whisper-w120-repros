@@ -45,3 +45,5 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#228](https://github.com/tenstorrent/whisper/issues/228) | [whisper-h-sret-vu-sdt](whisper-h-sret-vu-sdt/) |
 | [whisper#229](https://github.com/tenstorrent/whisper/issues/229) | [whisper-h-hfence-rs2](whisper-h-hfence-rs2/) |
 | [whisper#229](https://github.com/tenstorrent/whisper/issues/229) (VMIDLEN < VMIDMAX) | [whisper-h-hfence-vmidlen7](whisper-h-hfence-vmidlen7/) |
+| [whisper#233](https://github.com/tenstorrent/whisper/issues/233) | [whisper-ssamoswap-rd-rs2](whisper-ssamoswap-rd-rs2/) |
+| [whisper#234](https://github.com/tenstorrent/whisper/issues/234) | [whisper-rv32-sbe](whisper-rv32-sbe/) |
