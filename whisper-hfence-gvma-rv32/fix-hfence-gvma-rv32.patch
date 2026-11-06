@@ -1,0 +1,20 @@
+--- a/hypervisor.cpp
++++ b/hypervisor.cpp
+@@ -130,7 +130,7 @@
+     }
+   else if (di->op0() != 0 and di->op1() == 0)
+     {
+-      URV addr = intRegs_.read(di->op0()) << 2;
++      uint64_t addr = uint64_t(intRegs_.read(di->op0())) << 2;
+       uint64_t vpn = virtMem_.pageNumber(addr);
+       if (useGpa)
+ 	stage2Tlb.invalidateVirtualPageVmid(vpn, vmid, wid);
+@@ -140,7 +140,7 @@
+     }
+   else
+     {
+-      URV addr = intRegs_.read(di->op0()) << 2;
++      uint64_t addr = uint64_t(intRegs_.read(di->op0())) << 2;
+       uint64_t vpn = virtMem_.pageNumber(addr);
+       URV vmid = intRegs_.read(di->op1());
+       if (useGpa)
