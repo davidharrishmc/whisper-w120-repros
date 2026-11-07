@@ -53,3 +53,4 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#242](https://github.com/tenstorrent/whisper/issues/242) | [whisper-rv32-menvcfgh-cde](whisper-rv32-menvcfgh-cde/) |
 | [whisper#243](https://github.com/tenstorrent/whisper/issues/243) | [whisper-rv32-sireg4-not-delegated](whisper-rv32-sireg4-not-delegated/) |
 | [whisper#244](https://github.com/tenstorrent/whisper/issues/244) | [whisper-rv32-sireg5-write-ignored](whisper-rv32-sireg5-write-ignored/) |
+| [whisper#253](https://github.com/tenstorrent/whisper/issues/253) | [whisper-sireg-counter-side-effects](whisper-sireg-counter-side-effects/) |
