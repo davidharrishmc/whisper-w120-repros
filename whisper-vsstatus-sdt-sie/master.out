@@ -1,0 +1,2 @@
+rv64: x31 = 0x76 : 1 2 4 5 6 (failed checks)
+rv32: x31 = 0x76 : 1 2 4 5 6 (failed checks)

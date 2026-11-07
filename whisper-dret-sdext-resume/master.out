@@ -1,0 +1,26 @@
+rv64: x31 = 0x1eee60
+  FAIL check 5: dret to S: MPRV
+  FAIL check 6: dret to S: MDT
+  FAIL check 9: dret to U: MPRV
+  FAIL check 10: dret to U: MDT
+  FAIL check 11: dret to U: SDT
+  FAIL check 13: dret to VS: MPRV
+  FAIL check 14: dret to VS: MDT
+  FAIL check 15: dret to VS: SDT
+  FAIL check 17: dret to VU: MPRV
+  FAIL check 18: dret to VU: MDT
+  FAIL check 19: dret to VU: SDT
+  FAIL check 20: dret to VU: vsstatus.SDT
+rv32: x31 = 0x1eee60
+  FAIL check 5: dret to S: MPRV
+  FAIL check 6: dret to S: MDT
+  FAIL check 9: dret to U: MPRV
+  FAIL check 10: dret to U: MDT
+  FAIL check 11: dret to U: SDT
+  FAIL check 13: dret to VS: MPRV
+  FAIL check 14: dret to VS: MDT
+  FAIL check 15: dret to VS: SDT
+  FAIL check 17: dret to VU: MPRV
+  FAIL check 18: dret to VU: MDT
+  FAIL check 19: dret to VU: SDT
+  FAIL check 20: dret to VU: vsstatus.SDT
