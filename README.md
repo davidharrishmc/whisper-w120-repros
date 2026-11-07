@@ -49,3 +49,7 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#234](https://github.com/tenstorrent/whisper/issues/234) | [whisper-rv32-sbe](whisper-rv32-sbe/) |
 | [whisper#237](https://github.com/tenstorrent/whisper/issues/237) | [whisper-rv32-hstateen0h-csrind](whisper-rv32-hstateen0h-csrind/) |
 | [whisper#238](https://github.com/tenstorrent/whisper/issues/238) | [whisper-vs-sdt](whisper-vs-sdt/) |
+| [whisper#241](https://github.com/tenstorrent/whisper/issues/241) | [whisper-ctr-sret-hs-to-vs](whisper-ctr-sret-hs-to-vs/) |
+| [whisper#242](https://github.com/tenstorrent/whisper/issues/242) | [whisper-rv32-menvcfgh-cde](whisper-rv32-menvcfgh-cde/) |
+| [whisper#243](https://github.com/tenstorrent/whisper/issues/243) | [whisper-rv32-sireg4-not-delegated](whisper-rv32-sireg4-not-delegated/) |
+| [whisper#244](https://github.com/tenstorrent/whisper/issues/244) | [whisper-rv32-sireg5-write-ignored](whisper-rv32-sireg5-write-ignored/) |
