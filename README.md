@@ -58,3 +58,6 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#251](https://github.com/tenstorrent/whisper/issues/251) | [whisper-sfence-asidlen](whisper-sfence-asidlen/) |
 | [whisper#252](https://github.com/tenstorrent/whisper/issues/252) | [whisper-zilsd-ld-base-trap](whisper-zilsd-ld-base-trap/) |
 | [whisper#258](https://github.com/tenstorrent/whisper/issues/258) | [whisper-dbltrp-escalation](whisper-dbltrp-escalation/) |
+| [whisper#261](https://github.com/tenstorrent/whisper/issues/261) | [whisper-dret-sdext-resume](whisper-dret-sdext-resume/) |
+| [whisper#262](https://github.com/tenstorrent/whisper/issues/262) | [whisper-vsstatus-sdt-sie](whisper-vsstatus-sdt-sie/) |
+| [whisper#263](https://github.com/tenstorrent/whisper/issues/263), [whisper#264](https://github.com/tenstorrent/whisper/issues/264) | [whisper-hlv-hsv-gstage-endian](whisper-hlv-hsv-gstage-endian/) |
