@@ -63,3 +63,7 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#262](https://github.com/tenstorrent/whisper/issues/262) | [whisper-vsstatus-sdt-sie](whisper-vsstatus-sdt-sie/) |
 | [whisper#263](https://github.com/tenstorrent/whisper/issues/263), [whisper#264](https://github.com/tenstorrent/whisper/issues/264) | [whisper-hlv-hsv-gstage-endian](whisper-hlv-hsv-gstage-endian/) |
 | [whisper#270](https://github.com/tenstorrent/whisper/issues/270) | [whisper-snapshot-virt-mode](whisper-snapshot-virt-mode/) |
+| [whisper#272](https://github.com/tenstorrent/whisper/issues/272) | [whisper-dcsr-pelp-zicfilp](whisper-dcsr-pelp-zicfilp/) |
+| [whisper#273](https://github.com/tenstorrent/whisper/issues/273) | [whisper-menvcfg-poke-sdt](whisper-menvcfg-poke-sdt/) |
+| [whisper#274](https://github.com/tenstorrent/whisper/issues/274) | [whisper-snapshot-triggers](whisper-snapshot-triggers/) |
+| [whisper#275](https://github.com/tenstorrent/whisper/issues/275) | [whisper-snapshot-reset-csrs](whisper-snapshot-reset-csrs/) |
