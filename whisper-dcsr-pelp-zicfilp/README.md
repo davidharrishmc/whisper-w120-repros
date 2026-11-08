@@ -36,6 +36,7 @@ Run: `./run.sh [path/to/whisper]` (prints the failed checks; exit status 0 = pas
 (needs a toolchain with Zicfilp, for `lpad`).
 
 Other simulators: Spike, Sail and QEMU have no Debug Mode that a bare-metal program can enter, so the test
-cannot run on them. Imperas (`debug_mode=vector`, `debug_address=0x80000800`, `dexc_address=0x80000900`,
+cannot run on them. Imperas (stock ImperasDV Y-2026.09 library,
+`IMPERAS_VLNV=/cad/imperas/IMPERAS_DV/lib/Linux64/ImperasLib`; `debug_mode=vector`, `debug_address=0x80000800`, `dexc_address=0x80000900`,
 `dcsr_ebreak_mask=0x3f`, `rnmi_version=0.4` for Smrnmi) passes on RV64: it sets `dcsr.pelp` at the halt
 (0x4007b083) and takes the software-check exception after the resume.

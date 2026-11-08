@@ -1,0 +1,4 @@
+rv64: x31 = 0x0
+  PASS
+rv32: x31 = 0x0
+  PASS

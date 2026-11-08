@@ -1,0 +1,10 @@
+rv64: x31 = 0x2e
+  FAIL check 1: halt 1: dpc != step_b (the dret was counted as the stepped instruction)
+  FAIL check 2: halt 2: dpc != step_c
+  FAIL check 3: halt 3: dpc != mhandler (ecall trap)
+  FAIL check 5: halt 3: mcause != 11 or mepc != step_c
+rv32: x31 = 0x2e
+  FAIL check 1: halt 1: dpc != step_b (the dret was counted as the stepped instruction)
+  FAIL check 2: halt 2: dpc != step_c
+  FAIL check 3: halt 3: dpc != mhandler (ecall trap)
+  FAIL check 5: halt 3: mcause != 11 or mepc != step_c
