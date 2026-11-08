@@ -1,10 +1,11 @@
 rv64 straight run: x31 = 0x0
   PASS
-rv64 snapshot at instruction 40: pm 3 pc 0x8000005a c 0x300 0xa00001800 
+rv64 snapshot at instruction 40: pm 3 pc 0x8000005e c 0x300 0xa00001808 
 rv64 restored from snapshot: x31 = 0x0
   PASS
 rv32 straight run: x31 = 0x0
   PASS
-rv32 snapshot at instruction 40: pm 3 pc 0x8000005c c 0x300 0x1800 
-rv32 restored from snapshot: x31 = 0x2
+rv32 snapshot at instruction 40: pm 3 pc 0x80000060 c 0x300 0x1808 
+rv32 restored from snapshot: x31 = 0xa
   FAIL check 1: MDT = 1 after the restore
+  FAIL check 3: MIE = 0 after the restore

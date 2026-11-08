@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 W=${1:-whisper}
 P=40   # snapshot point: instruction 40 is in the nop sled on RV64 and RV32
 status=0
-names=([1]="MDT = 1 after the restore" [2]="ecall: mcause != 11" [3]="ecall: trap handler not reached")
+names=([1]="MDT = 1 after the restore" [2]="ecall: mcause != 11" [3]="MIE = 0 after the restore" [4]="ecall: trap handler not reached")
 report() {  # report <label> <log>
   local x5 x31; x5=$(echo "$2" | grep "slli     x5, x31, 1" | tail -1 | awk '{print $8}')
   if [ -z "$x5" ]; then echo "$1: no tohost write: $(echo "$2" | grep -m1 -E '^Error|stop')"; status=1; return; fi
