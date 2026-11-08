@@ -1,0 +1,18 @@
+rv64 straight run: x31 = 0x0
+  PASS
+rv64 snapshot at instruction 80: pm 1 vm 1 pc 0x800000e4 
+rv64 restored from snapshot: x31 = 0x3e
+  FAIL check 1: csrr sscratch did not read vsscratch
+  FAIL check 2: csrr sstatus did not read vsstatus (SUM)
+  FAIL check 3: instret did not count in VS-mode (Smcntrpmf)
+  FAIL check 4: csrw sscratch did not write vsscratch
+  FAIL check 5: csrw sscratch changed the HS sscratch
+rv32 straight run: x31 = 0x0
+  PASS
+rv32 snapshot at instruction 80: pm 1 vm 1 pc 0x800000ec 
+rv32 restored from snapshot: x31 = 0x3e
+  FAIL check 1: csrr sscratch did not read vsscratch
+  FAIL check 2: csrr sstatus did not read vsstatus (SUM)
+  FAIL check 3: instret did not count in VS-mode (Smcntrpmf)
+  FAIL check 4: csrw sscratch did not write vsscratch
+  FAIL check 5: csrw sscratch changed the HS sscratch
