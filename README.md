@@ -67,3 +67,4 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#273](https://github.com/tenstorrent/whisper/issues/273) | [whisper-menvcfg-poke-sdt](whisper-menvcfg-poke-sdt/) |
 | [whisper#274](https://github.com/tenstorrent/whisper/issues/274) | [whisper-snapshot-triggers](whisper-snapshot-triggers/) |
 | [whisper#275](https://github.com/tenstorrent/whisper/issues/275) | [whisper-snapshot-reset-csrs](whisper-snapshot-reset-csrs/) |
+| [whisper#280](https://github.com/tenstorrent/whisper/issues/280) | [whisper-dcsr-step-after-dret](whisper-dcsr-step-after-dret/) |
