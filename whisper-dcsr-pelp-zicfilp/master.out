@@ -1,0 +1,6 @@
+rv64: x31 = 0x42
+  FAIL check 1: dcsr.pelp = 0 after the trigger halt (ELP not saved)
+  FAIL check 6: no software-check exception at no_lpad after the dret (ELP not restored)
+rv32: x31 = 0x42
+  FAIL check 1: dcsr.pelp = 0 after the trigger halt (ELP not saved)
+  FAIL check 6: no software-check exception at no_lpad after the dret (ELP not restored)
