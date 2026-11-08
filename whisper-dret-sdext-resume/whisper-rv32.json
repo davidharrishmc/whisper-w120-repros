@@ -47,8 +47,8 @@
   },
 
   "csr": {
-    // dcsr: ebreakm resets to 1 so the test can enter Debug Mode with ebreak; ebreakvs/vu/m/s/u, v and prv writable.
-    "dcsr": { "reset": "0x40008003", "mask": "0x3b023", "poke_mask": "0x3b1ef" },
+    // dcsr: ebreakm resets to 1 so the test can enter Debug Mode with ebreak; ebreakvs/vu/m/s/u, v, prv and pelp writable.
+    "dcsr": { "reset": "0x40008003", "mask": "0x7b023", "poke_mask": "0x7b1ef" },
     // misa.C is writable, so tests can clear it and run with IALIGN = 32 (MUTABLE_MISA_C).  Giving misa a
 
     // mask also needs its reset value, which is otherwise taken from the ISA string.
