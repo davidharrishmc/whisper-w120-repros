@@ -1,0 +1,8 @@
+FAIL pm-misaligned-per-access.elf
+    SA-MISMATCH: ld at 0x00007ffffffffffc: cause (-1 = no trap) expect=0xffffffffffffffff got=0x000000000000000d
+    SA-MISMATCH: ld at 0x00007ffffffffffc: mtval expect=0x0000000000000000 got=0x0000800000000000
+    SA-MISMATCH: sd at 0x00007ffffffffffc: cause (-1 = no trap) expect=0xffffffffffffffff got=0x000000000000000f
+    SA-MISMATCH: sd at 0x00007ffffffffffc: mtval expect=0x0000000000000000 got=0x0000800000000000
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL

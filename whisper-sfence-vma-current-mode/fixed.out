@@ -1,0 +1,3 @@
+PASS sfence-vma-bare.elf
+PASS sfence-vma-mode-change-abort.elf
+PASS

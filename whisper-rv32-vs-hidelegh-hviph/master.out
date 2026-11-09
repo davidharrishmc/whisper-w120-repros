@@ -1,0 +1,12 @@
+FAIL rv32-vs-hidelegh-hviph.elf
+    SA-MISMATCH: VS-mode read of hidelegh: number of traps expect=0x00000001 got=0x00000000
+    SA-MISMATCH: VS-mode read of hidelegh: mcause (-1 = none) expect=0x00000016 got=0xffffffff
+    SA-MISMATCH: VS-mode write of hidelegh: number of traps expect=0x00000001 got=0x00000000
+    SA-MISMATCH: VS-mode write of hidelegh: mcause (-1 = none) expect=0x00000016 got=0xffffffff
+    SA-MISMATCH: VS-mode read of hviph: number of traps expect=0x00000001 got=0x00000000
+    SA-MISMATCH: VS-mode read of hviph: mcause (-1 = none) expect=0x00000016 got=0xffffffff
+    SA-MISMATCH: VS-mode write of hviph: number of traps expect=0x00000001 got=0x00000000
+    SA-MISMATCH: VS-mode write of hviph: mcause (-1 = none) expect=0x00000016 got=0xffffffff
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL

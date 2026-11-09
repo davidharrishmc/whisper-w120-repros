@@ -1,0 +1,11 @@
+FAIL rv32-vs-nonleaf-gpa-4g.elf
+    RVCP: Test Info: case 2: table GPA >= 4 GiB: hlv.w: number of traps
+    Error: Failed stop: Hart 0: write to to-host
+FAIL rv32-sv32-nonleaf-pa-4g.elf
+    SA-MISMATCH: case 1: Sv32 non-leaf PTE -> table at PA 0x1_0000_0000: lw: number of traps expect=0x00000000 got=0x00000001
+    SA-MISMATCH: case 1: Sv32 non-leaf PTE -> table at PA 0x1_0000_0000: lw value expect=0x5a5a1234 got=0x00000000
+    SA-MISMATCH: case 2: G-stage non-leaf PTE -> table at PA 0x1_0000_1000: hlv.w: number of traps expect=0x00000000 got=0x00000001
+    SA-MISMATCH: case 2: G-stage non-leaf PTE -> table at PA 0x1_0000_1000: hlv.w value expect=0x5a5a1234 got=0x00000000
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL

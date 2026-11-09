@@ -1,0 +1,18 @@
+FAIL rv32-address-wrap.elf
+    SA-MISMATCH: lw at 0xFFFFFFFE (bytes FFFFFFFE FFFFFFFF 0 1): mcause (-1 = no trap) expect=0x00000005 got=0xffffffff
+    SA-MISMATCH: lhu at 0xFFFFFFFF (bytes FFFFFFFF 0): mcause (-1 = no trap) expect=0x00000005 got=0xffffffff
+    SA-MISMATCH: sw at 0xFFFFFFFE (bytes FFFFFFFE FFFFFFFF 0 1): mcause (-1 = no trap) expect=0x00000007 got=0xffffffff
+    SA-MISMATCH: fetch of a 32-bit instruction at 0xFFFFFFFE: mepc expect=0xfffffffe got=0x00000002
+    SA-MISMATCH: fetch of a 32-bit instruction at 0xFFFFFFFE: the instruction did not execute expect=0x0000005a got=0xbfddbc18
+    SA-MISMATCH: S-mode (satp = Bare) lw at 0xFFFFFFFE: mcause (-1 = no trap) expect=0x00000005 got=0xffffffff
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL rv32-address-wrap-ram.elf
+    SA-MISMATCH: lw at 0xFFFFFFFE reads bytes FFFFFFFE FFFFFFFF 0 1 expect=0x2211bbaa got=0x0000bbaa
+    SA-MISMATCH: lhu at 0xFFFFFFFF reads bytes FFFFFFFF 0 expect=0x000011bb got=0x000000bb
+    SA-MISMATCH: sw at 0xFFFFFFFE: byte 0 (wrapped) expect=0x00000033 got=0x00000011
+    SA-MISMATCH: sw at 0xFFFFFFFE: byte 1 (wrapped) expect=0x00000044 got=0x00000022
+    SA-MISMATCH: wrap fetch: the instruction is addi x7, x0, 0x55 (upper parcel from address 0) expect=0x00000055 got=0xbfddbc18
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL

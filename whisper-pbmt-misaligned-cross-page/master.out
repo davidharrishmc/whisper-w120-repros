@@ -1,0 +1,6 @@
+FAIL pbmt-misaligned-cross-page.elf
+    SA-MISMATCH: ld at 0x40051ffc (PMA page -> IO page): access-fault mtval must be the page-B part expect=0x0000000040052000 got=0x0000000040051ffc
+    SA-MISMATCH: sd at 0x40051ffc (PMA page -> IO page): access-fault mtval must be the page-B part expect=0x0000000040052000 got=0x0000000040051ffc
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL

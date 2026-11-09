@@ -1,0 +1,3 @@
+PASS rv32-vs-nonleaf-gpa-4g.elf
+PASS rv32-sv32-nonleaf-pa-4g.elf
+PASS

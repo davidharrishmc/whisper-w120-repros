@@ -1,0 +1,6 @@
+FAIL pmp-tor-zero-bounds.elf
+    SA-MISMATCH: case 1: entry 0 TOR with pmpaddr0 = 0 matches nothing: U-mode lw from 0: mcause (-1 = none) expect=0x0000000000000005 got=0xffffffffffffffff
+    SA-MISMATCH: case 2: entry 1 TOR with pmpaddr0 = pmpaddr1 = 0 matches nothing: U-mode lw from 0: mcause (-1 = none) expect=0x0000000000000005 got=0xffffffffffffffff
+    RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL

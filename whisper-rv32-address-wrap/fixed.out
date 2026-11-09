@@ -1,0 +1,3 @@
+PASS rv32-address-wrap.elf
+PASS rv32-address-wrap-ram.elf
+PASS

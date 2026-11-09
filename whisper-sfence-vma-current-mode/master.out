@@ -1,0 +1,6 @@
+FAIL sfence-vma-bare.elf
+    RVCP: Test Info: load after SFENCE.VMA va (run under satp=Bare) reads page B
+    Error: Failed stop: Hart 0: write to to-host
+FAIL sfence-vma-mode-change-abort.elf
+    whisper: ./virtual_memory/Tlb.hpp:420: static uint64_t WdRiscv::Tlb::sizeIn4kBytes(Mode, unsigned int): Assertion `0 && "Error: Assertion failed"' failed.
+FAIL

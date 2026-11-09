@@ -1,0 +1,4 @@
+FAIL vs-ad-update-pmp-before-gstage.elf
+    RVCP: Test Info: case 2 (PMP: VS root page read-only): load guest-page fault (G-stage denies the implicit A-bit store): xcause (-1 = none)
+    Error: Failed stop: Hart 0: write to to-host
+FAIL
