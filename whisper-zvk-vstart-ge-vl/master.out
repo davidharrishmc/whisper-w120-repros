@@ -1,0 +1,3 @@
+zvk-vstart-ge-vl.elf: FAIL (exit 1)
+    RVCP: Test Info: vaesef.vv (Zvkned) vstart=vl=8: executed, so vstart must be reset to 0
+    RVCP: Bad Value:      0x0000000000000008

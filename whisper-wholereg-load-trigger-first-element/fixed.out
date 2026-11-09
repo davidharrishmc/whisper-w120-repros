@@ -1,0 +1,2 @@
+wholereg-load-trigger-first-element_rv64.elf: PASS
+wholereg-load-trigger-first-element_rv32.elf: PASS

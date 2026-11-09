@@ -1,0 +1,8 @@
+rv64: console output:
+    AABABCABCD
+    AABABCABCD
+rv64: FAIL (expected ABCD twice)
+rv32: console output:
+    AABABCABCD
+    AABABCABCD
+rv32: FAIL (expected ABCD twice)

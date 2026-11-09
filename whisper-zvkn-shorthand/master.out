@@ -1,0 +1,3 @@
+zvkn-shorthand.elf: FAIL (exit 1)
+    RVCP: Test Info: vaesef.vv (Zvkned) executes: number of traps
+    RVCP: Bad Value:      0x0000000000000001

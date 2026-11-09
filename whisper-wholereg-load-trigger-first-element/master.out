@@ -1,0 +1,4 @@
+wholereg-load-trigger-first-element_rv64.elf: FAIL (whisper died with signal 6)
+    whisper: VecLdStInfo.hpp:125: void WdRiscv::VecLdStInfo::removeLastElem(): Assertion `not elems_.empty()' failed.
+wholereg-load-trigger-first-element_rv32.elf: FAIL (whisper died with signal 6)
+    whisper: VecLdStInfo.hpp:125: void WdRiscv::VecLdStInfo::removeLastElem(): Assertion `not elems_.empty()' failed.

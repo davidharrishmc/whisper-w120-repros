@@ -1,0 +1,6 @@
+$ spike --isa=rv64gcv segstore_rv64.elf
+ABCD
+ABCD
+$ spike --isa=rv32gcv segstore_rv32.elf
+ABCD
+ABCD

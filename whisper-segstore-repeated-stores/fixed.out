@@ -1,0 +1,8 @@
+rv64: console output:
+    ABCD
+    ABCD
+rv64: PASS
+rv32: console output:
+    ABCD
+    ABCD
+rv32: PASS

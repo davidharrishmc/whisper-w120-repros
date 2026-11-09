@@ -99,10 +99,17 @@ Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual 
 | [whisper#288](https://github.com/tenstorrent/whisper/issues/288) | [whisper-dte-reenable-clears-sie](whisper-dte-reenable-clears-sie/) |
 | [whisper#324](https://github.com/tenstorrent/whisper/issues/324) | [whisper-sfence-vma-current-mode](whisper-sfence-vma-current-mode/) |
 | [whisper#326](https://github.com/tenstorrent/whisper/issues/326) | [whisper-pbmt-misaligned-cross-page](whisper-pbmt-misaligned-cross-page/) |
+| - | [whisper-wholereg-load-trigger-first-element](whisper-wholereg-load-trigger-first-element/) |
+| - | [whisper-segstore-repeated-stores](whisper-segstore-repeated-stores/) |
+| - | [whisper-usum-snan-canonicalize-nv](whisper-usum-snan-canonicalize-nv/) |
 | [whisper#338](https://github.com/tenstorrent/whisper/issues/338) | [whisper-sspopchk-gstage-tlb](whisper-sspopchk-gstage-tlb/) |
 | [whisper#340](https://github.com/tenstorrent/whisper/issues/340) | [whisper-ss-misaligned-superpage](whisper-ss-misaligned-superpage/) |
 | [whisper#342](https://github.com/tenstorrent/whisper/issues/342) | [whisper-ssamoswap-mprv-sse0](whisper-ssamoswap-mprv-sse0/) |
 | [whisper#290](https://github.com/tenstorrent/whisper/issues/290) | [whisper-csr-write-suppressed-no-rd](whisper-csr-write-suppressed-no-rd/) |
+| - | [whisper-zvk-vstart-ge-vl](whisper-zvk-vstart-ge-vl/) |
+| - | [whisper-vsm3me-vs1-align](whisper-vsm3me-vs1-align/) |
+| - | [whisper-zvk-vs-scalar-group-vlen64](whisper-zvk-vs-scalar-group-vlen64/) |
+| - | [whisper-zvkn-shorthand](whisper-zvkn-shorthand/) |
 | [whisper#292](https://github.com/tenstorrent/whisper/issues/292) | [whisper-misa-s-u-clear-stale-mstatus](whisper-misa-s-u-clear-stale-mstatus/) |
 | [whisper#294](https://github.com/tenstorrent/whisper/issues/294) | [whisper-misa-s-clear-keeps-h](whisper-misa-s-clear-keeps-h/) |
 | [whisper#296](https://github.com/tenstorrent/whisper/issues/296) | [whisper-misa-h-clear-sret-spv-abort](whisper-misa-h-clear-sret-spv-abort/) |

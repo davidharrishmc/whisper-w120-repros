@@ -1,0 +1,3 @@
+vsm3me-vs1-align.elf: FAIL (exit 1)
+    RVCP: Test Info: vsm3me.vv v8, v16, v25 at LMUL=2 (vs1 not aligned) raises illegal-instruction: number of traps
+    RVCP: Bad Value:      0x0000000000000000
