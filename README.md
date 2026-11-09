@@ -75,11 +75,11 @@ Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual 
 
 | Issue | Directory |
 |---|---|
-| - | [whisper-sbare-mxr-tvm](whisper-sbare-mxr-tvm/) |
-| - | [whisper-aplic-seip-software-bit](whisper-aplic-seip-software-bit/) |
-| - | [whisper-mret-mpp-m-mpv-clears-sdt](whisper-mret-mpp-m-mpv-clears-sdt/) |
-| - | [whisper-dte-reenable-clears-sie](whisper-dte-reenable-clears-sie/) |
-| - | [whisper-csr-write-suppressed-no-rd](whisper-csr-write-suppressed-no-rd/) |
-| - | [whisper-misa-s-u-clear-stale-mstatus](whisper-misa-s-u-clear-stale-mstatus/) |
-| - | [whisper-misa-s-clear-keeps-h](whisper-misa-s-clear-keeps-h/) |
-| - | [whisper-misa-h-clear-sret-spv-abort](whisper-misa-h-clear-sret-spv-abort/) |
+| [whisper#282](https://github.com/tenstorrent/whisper/issues/282) | [whisper-sbare-mxr-tvm](whisper-sbare-mxr-tvm/) |
+| [whisper#284](https://github.com/tenstorrent/whisper/issues/284) | [whisper-aplic-seip-software-bit](whisper-aplic-seip-software-bit/) |
+| [whisper#286](https://github.com/tenstorrent/whisper/issues/286) | [whisper-mret-mpp-m-mpv-clears-sdt](whisper-mret-mpp-m-mpv-clears-sdt/) |
+| [whisper#288](https://github.com/tenstorrent/whisper/issues/288) | [whisper-dte-reenable-clears-sie](whisper-dte-reenable-clears-sie/) |
+| [whisper#290](https://github.com/tenstorrent/whisper/issues/290) | [whisper-csr-write-suppressed-no-rd](whisper-csr-write-suppressed-no-rd/) |
+| [whisper#292](https://github.com/tenstorrent/whisper/issues/292) | [whisper-misa-s-u-clear-stale-mstatus](whisper-misa-s-u-clear-stale-mstatus/) |
+| [whisper#294](https://github.com/tenstorrent/whisper/issues/294) | [whisper-misa-s-clear-keeps-h](whisper-misa-s-clear-keeps-h/) |
+| [whisper#296](https://github.com/tenstorrent/whisper/issues/296) | [whisper-misa-h-clear-sret-spv-abort](whisper-misa-h-clear-sret-spv-abort/) |
