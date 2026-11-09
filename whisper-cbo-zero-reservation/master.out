@@ -1,0 +1,5 @@
+lrsc-cbo-zero-2h.elf deterministic: FAIL (SC succeeded after the other hart's write)
+lrsc-cbo-zero-2h.elf threaded: FAIL (SC succeeded after the other hart's write)
+lrsc-sw-control-2h.elf deterministic: PASS (SC failed)
+lrsc-sw-control-2h.elf threaded: PASS (SC failed)
+FAIL

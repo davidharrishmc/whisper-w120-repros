@@ -1,0 +1,12 @@
+whisper-amo-straddle-htval.elf: FAIL (failed-check bitmask 0x0000000000000666)
+  bit 1: amoadd.w: guest-page fault, stval is not 0 or 0x100000000
+  bit 2: amoadd.w: htval is not 0 or GPA(stval) >> 2
+  bit 5: lr.w: guest-page fault, stval is not 0 or 0x100000000
+  bit 6: lr.w: htval is not 0 or GPA(stval) >> 2
+  bit 9: sc.w: guest-page fault, stval is not 0 or 0x100000000
+  bit 10: sc.w: htval is not 0 or GPA(stval) >> 2
+whisper-amo-straddle-stval-s.elf: FAIL (failed-check bitmask 0x0000000000000222)
+  bit 1: amoadd.w: page fault, stval is not 0 or 0x100000000
+  bit 5: lr.w: page fault, stval is not 0 or 0x100000000
+  bit 9: sc.w: page fault, stval is not 0 or 0x100000000
+FAIL

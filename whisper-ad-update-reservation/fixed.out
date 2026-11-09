@@ -1,0 +1,7 @@
+lrsc-ad-update-2h-a-bit.elf deterministic: PASS (SC failed)
+lrsc-ad-update-2h-a-bit.elf threaded: PASS (SC failed)
+lrsc-ad-update-2h-d-bit.elf deterministic: PASS (SC failed)
+lrsc-ad-update-2h-d-bit.elf threaded: PASS (SC failed)
+lrsc-ad-update-2h-sd-control.elf deterministic: PASS (SC failed)
+lrsc-ad-update-2h-sd-control.elf threaded: PASS (SC failed)
+PASS

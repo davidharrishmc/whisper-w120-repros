@@ -1,0 +1,4 @@
+whisper-rv32-amocas-d-big-endian.elf: FAIL (failed-check bitmask 0x0000000c)
+  bit 2: MBE=1: the second amocas.d stores {C, D} in the other order from the one in which the first read the pair
+  bit 3: MBE=1: the third amocas.d does not return {C, D}
+FAIL

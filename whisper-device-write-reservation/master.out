@@ -1,0 +1,2 @@
+lrsc-iommu-write.elf: FAIL (SC succeeded after the IOMMU wrote the bytes the LR read)
+FAIL

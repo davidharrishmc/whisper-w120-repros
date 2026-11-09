@@ -75,6 +75,13 @@ Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual 
 
 | Issue | Directory |
 |---|---|
+| - | [whisper-amo-straddle-tval](whisper-amo-straddle-tval/) |
+| - | [whisper-zalasr-misaligned-granule](whisper-zalasr-misaligned-granule/) |
+| - | [whisper-rv32-amocas-d-big-endian](whisper-rv32-amocas-d-big-endian/) |
+| - | [whisper-cbo-zero-reservation](whisper-cbo-zero-reservation/) |
+| - | [whisper-ad-update-reservation](whisper-ad-update-reservation/) |
+| - | [whisper-device-write-reservation](whisper-device-write-reservation/) |
+| - | [whisper-rv32-minstret-write](whisper-rv32-minstret-write/) |
 | [whisper#282](https://github.com/tenstorrent/whisper/issues/282) | [whisper-sbare-mxr-tvm](whisper-sbare-mxr-tvm/) |
 | [whisper#284](https://github.com/tenstorrent/whisper/issues/284) | [whisper-aplic-seip-software-bit](whisper-aplic-seip-software-bit/) |
 | [whisper#286](https://github.com/tenstorrent/whisper/issues/286) | [whisper-mret-mpp-m-mpv-clears-sdt](whisper-mret-mpp-m-mpv-clears-sdt/) |

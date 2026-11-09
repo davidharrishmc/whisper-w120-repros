@@ -1,0 +1,5 @@
+lrsc-cbo-zero-2h.elf deterministic: PASS (SC failed)
+lrsc-cbo-zero-2h.elf threaded: PASS (SC failed)
+lrsc-sw-control-2h.elf deterministic: PASS (SC failed)
+lrsc-sw-control-2h.elf threaded: PASS (SC failed)
+PASS

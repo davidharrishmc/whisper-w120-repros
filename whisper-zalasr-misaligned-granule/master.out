@@ -1,0 +1,8 @@
+whisper-zalasr-misaligned-granule.elf: FAIL (failed-check bitmask 0x0000000000000555)
+  bit 0: lw.aq at offset 1 traps
+  bit 2: lh.aq at offset 1 traps
+  bit 4: ld.aq at offset 1 traps
+  bit 6: sw.rl at offset 5 traps
+  bit 8: sh.rl at offset 7 traps
+  bit 10: sd.rl at offset 3 traps
+FAIL
