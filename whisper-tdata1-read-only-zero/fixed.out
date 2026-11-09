@@ -1,0 +1,3 @@
+PASS  whisper-tdata1-read-only-zero_rv64.elf
+PASS  whisper-tdata1-read-only-zero_rv32.elf
+PASS

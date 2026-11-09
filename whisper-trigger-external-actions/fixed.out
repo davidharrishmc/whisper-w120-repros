@@ -1,0 +1,5 @@
+PASS  whisper-trigger-action-reserved_rv64.elf
+PASS  whisper-trigger-action-external_rv64.elf
+PASS  whisper-trigger-action-reserved_rv32.elf
+PASS  whisper-trigger-action-external_rv32.elf
+PASS

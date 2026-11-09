@@ -1,0 +1,29 @@
+FAIL  whisper-trigger-action-reserved_rv64.elf
+      SA-MISMATCH: mcontrol6 action=6 (reserved) is not kept expect=0x0000000000000001 got=0x0000000000000000
+      SA-MISMATCH: mcontrol6 action=7 (reserved) is not kept expect=0x0000000000000001 got=0x0000000000000000
+      SA-MISMATCH: icount action=6 (reserved) is not kept expect=0x0000000000000001 got=0x0000000000000000
+      SA-MISMATCH: icount action=7 (reserved) is not kept expect=0x0000000000000001 got=0x0000000000000000
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x0000000000000004
+FAIL  whisper-trigger-action-external_rv64.elf
+      SA-MISMATCH: mcontrol6 action=8 (external trigger output 0): action read back expect=0x0000000000000008 got=0x0000000000000000
+      SA-MISMATCH: mcontrol6 action=9 (external trigger output 1): action read back expect=0x0000000000000009 got=0x0000000000000000
+      SA-MISMATCH: icount action=8 (external trigger output 0): action read back expect=0x0000000000000008 got=0x0000000000000000
+      SA-MISMATCH: icount action=9 (external trigger output 1): action read back expect=0x0000000000000009 got=0x0000000000000000
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x0000000000000004
+FAIL  whisper-trigger-action-reserved_rv32.elf
+      SA-MISMATCH: mcontrol6 action=6 (reserved) is not kept expect=0x00000001 got=0x00000000
+      SA-MISMATCH: mcontrol6 action=7 (reserved) is not kept expect=0x00000001 got=0x00000000
+      SA-MISMATCH: icount action=6 (reserved) is not kept expect=0x00000001 got=0x00000000
+      SA-MISMATCH: icount action=7 (reserved) is not kept expect=0x00000001 got=0x00000000
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x00000004
+FAIL  whisper-trigger-action-external_rv32.elf
+      SA-MISMATCH: mcontrol6 action=8 (external trigger output 0): action read back expect=0x00000008 got=0x00000000
+      SA-MISMATCH: mcontrol6 action=9 (external trigger output 1): action read back expect=0x00000009 got=0x00000000
+      SA-MISMATCH: icount action=8 (external trigger output 0): action read back expect=0x00000008 got=0x00000000
+      SA-MISMATCH: icount action=9 (external trigger output 1): action read back expect=0x00000009 got=0x00000000
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x00000004
+FAIL

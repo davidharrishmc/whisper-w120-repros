@@ -1,0 +1,10 @@
+FAIL  whisper-ss-misaligned-superpage.elf
+      RVCP: Test Info: case 1: sd to a misaligned SS megapage: cause (misaligned superpage: 15)
+      RVCP: Bad Value:      0x0000000000000007
+FAIL  whisper-ss-misaligned-superpage-mprv.elf
+      RVCP: Test Info: sw to misaligned SS superpage: xcause (-1 = none)
+      RVCP: Bad Value:      0x0000000000000007
+FAIL  whisper-ss-misaligned-superpage-vs.elf
+      RVCP: Test Info: case 1: VS sd to a misaligned SS megapage: cause (misaligned superpage: 15)
+      RVCP: Bad Value:      0x0000000000000007
+FAIL

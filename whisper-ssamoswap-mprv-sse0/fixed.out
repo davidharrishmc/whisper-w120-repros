@@ -1,0 +1,6 @@
+PASS  whisper-ssamoswap-mprv-sse0.elf
+PASS  whisper-ssamoswap-mprv-sse0-tlb.elf
+PASS  whisper-ssamoswap-mprv-mpv-hsse0.elf
+PASS  whisper-ssamoswap-mprv-mpv-hsse0-tlb.elf
+PASS  whisper-ssamoswap-mprv-mpv-sse0-gstage.elf
+PASS

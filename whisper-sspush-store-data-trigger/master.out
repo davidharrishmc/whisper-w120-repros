@@ -1,0 +1,4 @@
+FAIL  whisper-sspush-store-data-trigger.elf
+      RVCP: Test Info: sspush of the tdata2 value: xcause (3 = store-data breakpoint)
+      RVCP: Bad Value:      0xffffffffffffffff
+FAIL

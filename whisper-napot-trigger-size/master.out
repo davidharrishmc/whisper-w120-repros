@@ -1,0 +1,6 @@
+FAIL  whisper-napot-trigger-size.elf
+      SA-MISMATCH: load case: tdata2=0xffffffff00000007, lw of 3: xcause (3 = breakpoint) expect=0x0000000000000003 got=0xffffffffffffffff
+      SA-MISMATCH: execute case: tdata2=0xffffffff000f8f97, addi x31,x31,0: xcause (3 = breakpoint) expect=0x0000000000000003 got=0xffffffffffffffff
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x0000000000000002
+FAIL

@@ -1,0 +1,4 @@
+PASS  whisper-ss-misaligned-superpage.elf
+PASS  whisper-ss-misaligned-superpage-mprv.elf
+PASS  whisper-ss-misaligned-superpage-vs.elf
+PASS

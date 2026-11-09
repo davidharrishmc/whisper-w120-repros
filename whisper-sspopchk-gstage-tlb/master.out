@@ -1,0 +1,4 @@
+FAIL  whisper-sspopchk-gstage-tlb.elf
+      RVCP: Test Info: case 2: VS sspopchk, G-stage R only, after ld from the same page: number of traps
+      RVCP: Bad Value:      0x0000000000000000
+FAIL

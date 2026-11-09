@@ -1,0 +1,11 @@
+FAIL  whisper-ssamoswap-mprv-sse0.elf
+      whisper-master: VirtMem.cpp:811: WdRiscv::ExceptionCause WdRiscv::VirtMem::pageTableWalk(uint64_t, WdRiscv::PrivilegeMode, bool, bool, bool, uint64_t&, WdRiscv::TlbEntry&) [with PTE = WdRiscv::Pte39; VA = WdRiscv::Va39; uint64_t = long unsigned int]: Assertion `ssEnabled_' failed.
+FAIL  whisper-ssamoswap-mprv-sse0-tlb.elf
+      whisper-master: VirtMem.cpp:314: WdRiscv::ExceptionCause WdRiscv::VirtMem::translate(uint64_t, WdRiscv::PrivilegeMode, bool, bool, bool, bool, uint64_t&, uint64_t&): Assertion `ssEnabled_' failed.
+FAIL  whisper-ssamoswap-mprv-mpv-hsse0.elf
+      whisper-master: VirtMem.cpp:1220: WdRiscv::ExceptionCause WdRiscv::VirtMem::stage1PageTableWalk(uint64_t, WdRiscv::PrivilegeMode, bool, bool, bool, uint64_t&, WdRiscv::TlbEntry&) [with PTE = WdRiscv::Pte39; VA = WdRiscv::Va39; uint64_t = long unsigned int]: Assertion `vsSsEnabled_' failed.
+FAIL  whisper-ssamoswap-mprv-mpv-hsse0-tlb.elf
+      whisper-master: VirtMem.cpp:582: WdRiscv::ExceptionCause WdRiscv::VirtMem::stage1Translate(uint64_t, WdRiscv::PrivilegeMode, bool, bool, bool, uint64_t&, WdRiscv::TlbEntry*): Assertion `vsSsEnabled_' failed.
+FAIL  whisper-ssamoswap-mprv-mpv-sse0-gstage.elf
+      whisper-master: VirtMem.cpp:1220: WdRiscv::ExceptionCause WdRiscv::VirtMem::stage1PageTableWalk(uint64_t, WdRiscv::PrivilegeMode, bool, bool, bool, uint64_t&, WdRiscv::TlbEntry&) [with PTE = WdRiscv::Pte39; VA = WdRiscv::Va39; uint64_t = long unsigned int]: Assertion `vsSsEnabled_' failed.
+FAIL

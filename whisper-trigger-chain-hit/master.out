@@ -1,0 +1,4 @@
+FAIL  whisper-trigger-chain-hit.elf
+      RVCP: Test Info: case: chain did not fire: hit1|hit0 of trigger 0
+      RVCP: Bad Value:      0x0000000000400000
+FAIL

@@ -1,0 +1,22 @@
+FAIL  whisper-tdata1-read-only-zero_rv64.elf
+      SA-MISMATCH: mcontrol6 (v1): bits 58:27 and 20:19 read 0 expect=0x0000000000000000 got=0x0400000000180000
+      SA-MISMATCH: mcontrol6 (v1): bits 20:19 alone read 0 expect=0x0000000000000000 got=0x0000000000180000
+      SA-MISMATCH: mcontrol6 (v1): bits 58 and 30 alone read 0 expect=0x0000000000000000 got=0x0400000000000000
+      SA-MISMATCH: icount: bits 58:27 read 0 expect=0x0000000000000000 got=0x0400000000000000
+      SA-MISMATCH: itrigger: bits 57:13 and 8 read 0 expect=0x0000000000000000 got=0x0000000001ffe100
+      SA-MISMATCH: etrigger: bits 57:13, 10 and 8 read 0 expect=0x0000000000000000 got=0x0000000001ffe500
+      SA-MISMATCH: itrigger: bit 20 alone reads 0 expect=0x0000000000000000 got=0x0000000000100000
+      SA-MISMATCH: etrigger: bits 20 and 10 alone read 0 expect=0x0000000000000000 got=0x0000000000100400
+      SA-MISMATCH: icount: bit 58 alone reads 0 expect=0x0000000000000000 got=0x0400000000000000
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x0000000000000009
+FAIL  whisper-tdata1-read-only-zero_rv32.elf
+      SA-MISMATCH: mcontrol6 (v1): bits 20:19 read 0 expect=0x00000000 got=0x00180000
+      SA-MISMATCH: mcontrol6 (v1): bits 20:19 alone read 0 expect=0x00000000 got=0x00180000
+      SA-MISMATCH: itrigger: bits 25:13 and 8 read 0 expect=0x00000000 got=0x01ffe100
+      SA-MISMATCH: etrigger: bits 25:13, 10 and 8 read 0 expect=0x00000000 got=0x01ffe500
+      SA-MISMATCH: itrigger: bit 20 alone reads 0 expect=0x00000000 got=0x00100000
+      SA-MISMATCH: etrigger: bits 20 and 10 alone read 0 expect=0x00000000 got=0x00100400
+      RVCP: Test Info: number of SA-MISMATCH soft-check failures (see the log)
+      RVCP: Bad Value:      0x00000006
+FAIL
