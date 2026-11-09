@@ -68,3 +68,18 @@ Reproducers for the issues filed as follow-ups to https://github.com/tenstorrent
 | [whisper#274](https://github.com/tenstorrent/whisper/issues/274) | [whisper-snapshot-triggers](whisper-snapshot-triggers/) |
 | [whisper#275](https://github.com/tenstorrent/whisper/issues/275) | [whisper-snapshot-reset-csrs](whisper-snapshot-reset-csrs/) |
 | [whisper#280](https://github.com/tenstorrent/whisper/issues/280) | [whisper-dcsr-step-after-dret](whisper-dcsr-step-after-dret/) |
+
+## Spec audit 2026-11-08
+
+Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual and the debug spec.
+
+| Issue | Directory |
+|---|---|
+| - | [whisper-sbare-mxr-tvm](whisper-sbare-mxr-tvm/) |
+| - | [whisper-aplic-seip-software-bit](whisper-aplic-seip-software-bit/) |
+| - | [whisper-mret-mpp-m-mpv-clears-sdt](whisper-mret-mpp-m-mpv-clears-sdt/) |
+| - | [whisper-dte-reenable-clears-sie](whisper-dte-reenable-clears-sie/) |
+| - | [whisper-csr-write-suppressed-no-rd](whisper-csr-write-suppressed-no-rd/) |
+| - | [whisper-misa-s-u-clear-stale-mstatus](whisper-misa-s-u-clear-stale-mstatus/) |
+| - | [whisper-misa-s-clear-keeps-h](whisper-misa-s-clear-keeps-h/) |
+| - | [whisper-misa-h-clear-sret-spv-abort](whisper-misa-h-clear-sret-spv-abort/) |
