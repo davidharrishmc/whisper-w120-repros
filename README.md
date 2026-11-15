@@ -113,3 +113,5 @@ Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual 
 | [whisper#292](https://github.com/tenstorrent/whisper/issues/292) | [whisper-misa-s-u-clear-stale-mstatus](whisper-misa-s-u-clear-stale-mstatus/) |
 | [whisper#294](https://github.com/tenstorrent/whisper/issues/294) | [whisper-misa-s-clear-keeps-h](whisper-misa-s-clear-keeps-h/) |
 | [whisper#296](https://github.com/tenstorrent/whisper/issues/296) | [whisper-misa-h-clear-sret-spv-abort](whisper-misa-h-clear-sret-spv-abort/) |
+| [whisper#363](https://github.com/tenstorrent/whisper/issues/363) | [whisper-counters-fast-run](whisper-counters-fast-run/) |
+| [whisper#364](https://github.com/tenstorrent/whisper/issues/364) | [whisper-mip-mtip-read](whisper-mip-mtip-read/) |
