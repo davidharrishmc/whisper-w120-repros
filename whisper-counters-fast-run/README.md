@@ -1,6 +1,6 @@
 # Whisper: without --logfile, mcountinhibit is ignored and (M-only harts) mcycle/minstret do not count
 
-`counters.S` (RV64, M-mode) checks that `minstret` and `mcycle` advance over 32 `nop`s while not inhibited
+`counters.S` (RV64, M-mode) first takes one exception (an illegal write to the read-only `mvendorid`, which its handler skips), then checks that `minstret` and `mcycle` advance over 32 `nop`s while not inhibited
 (checks 1 and 2), then sets `mcountinhibit` = 5 (CY, IR) and checks that neither advances over 32 more
 `nop`s (checks 3 and 4; skipped if `mcountinhibit` does not read back 5). On failure it prints `FAIL n` on the
 HTIF console and writes `(n << 1) | 1` to `tohost`.

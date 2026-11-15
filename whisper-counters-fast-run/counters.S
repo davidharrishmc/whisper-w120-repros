@@ -2,10 +2,14 @@
 // Whisper gets both right with --logfile, but its fast run loops (no --logfile) do not:
 //  - with an M-mode-only hart (simpleRunNoLimit) mcycle/minstret never advance -> failure 1 or 2;
 //  - otherwise (simpleRunWithLimit) a write to mcountinhibit never takes effect -> failure 3 or 4.
+// The program takes one exception (an illegal instruction) first: the counters must keep counting after a trap.
 #include "common.h"
   .section .text.init
   .globl _start
 _start:
+  la t0, handler
+  csrw mtvec, t0
+  csrw mvendorid, zero  // write to a read-only CSR = illegal instruction: one trap before the checks; the handler skips it
   csrw mcountinhibit, zero
   nop
   // 1, 2: counters advance while not inhibited
@@ -41,4 +45,10 @@ _start:
 3:beq t3, t1, 4f
   TEST_FAIL(4)      // mcycle advanced while inhibited
 4:TEST_PASS
+  .balign 4
+handler:            // skip the trapping instruction (all instructions here are 4 bytes)
+  csrr t6, mepc
+  addi t6, t6, 4
+  csrw mepc, t6
+  mret
 TEST_END
