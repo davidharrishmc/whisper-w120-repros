@@ -1,0 +1,5 @@
+FAIL  whisper-m.json  : FAIL 1
+PASS  whisper-m.json --logfile LOG
+FAIL  whisper-mu.json  : FAIL 3
+PASS  whisper-mu.json --logfile LOG
+FAIL

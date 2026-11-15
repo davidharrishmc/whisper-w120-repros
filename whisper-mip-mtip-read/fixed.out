@@ -1,0 +1,3 @@
+PASS  mtip.elf 
+PASS  mtip.elf --logfile LOG
+PASS

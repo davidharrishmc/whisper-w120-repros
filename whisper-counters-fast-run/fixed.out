@@ -1,0 +1,5 @@
+PASS  whisper-m.json 
+PASS  whisper-m.json --logfile LOG
+PASS  whisper-mu.json 
+PASS  whisper-mu.json --logfile LOG
+PASS

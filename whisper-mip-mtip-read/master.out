@@ -1,0 +1,3 @@
+FAIL  mtip.elf  : FAIL 2
+PASS  mtip.elf --logfile LOG
+FAIL
