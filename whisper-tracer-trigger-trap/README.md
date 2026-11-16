@@ -19,7 +19,7 @@ PASS  trig.elf --logfile LOG
 FAIL
 ```
 
-`fixed.out` is the output with the fix.
+`fixed.out` is the output with the fix ([tenstorrent/whisper#368](https://github.com/tenstorrent/whisper/pull/368)). Issue: [tenstorrent/whisper#367](https://github.com/tenstorrent/whisper/issues/367).
 
 ## Run
 
