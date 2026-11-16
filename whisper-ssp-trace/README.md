@@ -20,7 +20,7 @@ FAIL  log reports no ssp write on pop (00000000800000b4):
 FAIL
 ```
 
-`fixed.out` is the output with the fix.
+`fixed.out` is the output with the fix ([tenstorrent/whisper#371](https://github.com/tenstorrent/whisper/pull/371)). Issue: [tenstorrent/whisper#370](https://github.com/tenstorrent/whisper/issues/370).
 
 ## Run
 
