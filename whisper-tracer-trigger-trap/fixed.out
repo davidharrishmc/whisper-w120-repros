@@ -1,0 +1,3 @@
+PASS  trig.elf 
+PASS  trig.elf --logfile LOG
+PASS

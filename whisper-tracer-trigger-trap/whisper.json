@@ -1,0 +1,12 @@
+{
+  "isa": "rv64iu_zicsr_sdtrig",
+  "memmap": { "size": "0x100000000", "page_size": 4096 },
+  "trigger_types": ["none", "disabled", "mcontrol6"],
+  "trigger_actions": ["raisebreak"],
+  "trigger_use_tcontrol": false,
+  "triggers": [
+    { "reset": [0, 0, 0, "0x1008078"],
+      "mask": ["0xfc00000001ffffff", "0xffffffffffffffff", "0xffff00f3ffffffff", 0],
+      "poke_mask": ["0xfc00000001ffffff", "0xffffffffffffffff", "0xffff00f3ffffffff", 0] }
+  ]
+}
