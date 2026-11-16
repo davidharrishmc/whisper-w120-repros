@@ -1,0 +1,4 @@
+PASS  program (ssp values)
+PASS  log reports ssp on push (00000000800000a4): 0000000040003038
+PASS  log reports ssp on pop (00000000800000b4): 0000000040003040
+PASS

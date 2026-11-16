@@ -1,0 +1,8 @@
+{
+  "isa": "rv64imsu_zicsr_zimop_zicfiss",
+  "memmap": {
+    "size": "0x100000000", "page_size": 4096,
+    "pma": [ { "low": "0x80000000", "high": "0xffffffff",
+               "attribs": ["read", "write", "exec", "idempotent", "cacheable", "amoswap", "amological", "amoother", "rsrv"] } ]
+  }
+}
