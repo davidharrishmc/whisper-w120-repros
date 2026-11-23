@@ -1,0 +1,4 @@
+riscv_cpu_do_interrupt: hart:0, async:0, cause:0000000000000000, epc:0x80000040, tval:0x0000000080000046, desc=misaligned_fetch
+riscv_cpu_do_interrupt: hart:0, async:0, cause:0000000000000002, epc:0x80000064, tval:0x0000000000000004, desc=illegal_instruction
+riscv_cpu_do_interrupt: hart:0, async:0, cause:0000000000000002, epc:0x800000c4, tval:0x0000000000006101, desc=illegal_instruction
+riscv_cpu_do_interrupt: hart:0, async:0, cause:0000000000000002, epc:0x80000128, tval:0x0000000000004002, desc=illegal_instruction

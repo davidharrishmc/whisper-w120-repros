@@ -1,0 +1,10 @@
+{
+  "isa": "rv32i_zicsr",
+  "memmap": {
+    "size": "0x100000000",
+    "pma": [
+      { "low": "0x80000000", "high": "0xffffffff",
+        "attribs": ["read", "write", "exec", "amo", "rsrv", "idempotent", "misal_ok", "cacheable"] }
+    ]
+  }
+}

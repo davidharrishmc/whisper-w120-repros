@@ -1,0 +1,41 @@
+From 86cd81d5699c349bb5dd28cf18b3a4622aad2b88 Mon Sep 17 00:00:00 2001
+From: David Harris <David_Harris@hmc.edu>
+Date: Mon, 23 Nov 2026 11:42:06 -0800
+Subject: [PATCH] Report the whole word in mtval for a non-11 encoding without
+ Zca
+
+Without Zca, IALIGN is 32 and every instruction is 32 bits long, so a word
+whose low two bits are not 11 is an illegal 32-bit instruction. Truncate it
+to 16 bits at fetch and in illegalInst only when Zca is enabled.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Signed-off-by: David Harris <David_Harris@hmc.edu>
+---
+ Hart.cpp | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Hart.cpp b/Hart.cpp
+index 9e22ba32..d7ecf2d4 100644
+--- a/Hart.cpp
++++ b/Hart.cpp
+@@ -3339,7 +3339,7 @@ Hart<URV>::fetchInstNoTrap(uint64_t& va, uint64_t& pa, [[maybe_unused]] uint64_t
+       if (traceCacheOn_)
+         traceCache(va, pa, pa, false, false, true, false, false);
+ 
+-      if (isCompressedInst(inst))
++      if (isCompressedInst(inst) and isRvzca())
+ 	inst = (inst << 16) >> 16;
+       return ExceptionCause::NONE;
+     }
+@@ -3465,7 +3465,7 @@ Hart<URV>::illegalInst(const DecodedInst* di)
+     return;
+ 
+   uint32_t inst = di->inst();
+-  if (isCompressedInst(inst))
++  if (isCompressedInst(inst) and isRvzca())
+     inst = inst & 0xffff;
+ 
+   URV info = clearMtvalOnIllInst_ ? 0 : inst;
+-- 
+2.47.3
+

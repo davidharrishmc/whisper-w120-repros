@@ -1,0 +1,15 @@
+HTIF located at 0x80001000
+Entry point: 0x80000000
+trapping from M to M to handle misaligned-fetch
+handling exc#misaligned-fetch at priv M | tval=0x0000000080000046 | tval2=0x0000000000000000 | tinst=0x0000000000000000
+ret-ing from M to M
+trapping from M to M to handle illegal-instruction
+handling exc#illegal-instruction at priv M | tval=0x0000000000000004 | tval2=0x0000000000000000 | tinst=0x0000000000000000
+ret-ing from M to M
+trapping from M to M to handle illegal-instruction
+handling exc#illegal-instruction at priv M | tval=0x0000000000006101 | tval2=0x0000000000000000 | tinst=0x0000000000000000
+ret-ing from M to M
+trapping from M to M to handle illegal-instruction
+handling exc#illegal-instruction at priv M | tval=0x0000000000004002 | tval2=0x0000000000000000 | tinst=0x0000000000000000
+ret-ing from M to M
+FAILURE: 21 (0x00000015)

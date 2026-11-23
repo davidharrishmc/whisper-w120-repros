@@ -1,0 +1,10 @@
+{
+  "extensions": {
+    "C": { "mutable_misa": false },
+    "Zca": { "supported": false },
+    "Zcf": { "supported": false },
+    "Zcd": { "supported": false },
+    "Zcb": { "supported": false },
+    "Zcmop": { "supported": false }
+  }
+}
