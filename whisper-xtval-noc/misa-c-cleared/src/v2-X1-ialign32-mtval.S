@@ -1,4 +1,4 @@
-// verify-v2 X1: illegal-instruction xtval when IALIGN=32 (riscv-isa-manual#3547, fixed by #3549 on 2026-11-19).
+// Illegal-instruction xtval when IALIGN=32 (riscv-isa-manual#3547, fixed by #3549 on 2026-11-19).
 // Spec: unpriv/intro.adoc:456-461 (IALIGN is 32 in the base ISA; "Instructions are always a multiple of IALIGN bits
 // in length."), priv/machine.adoc:2037-2045 (nonzero mtval on illegal instruction = shortest of the actual faulting
 // instruction, the first ILEN bits, the first MXLEN bits), priv/machine.adoc:189 (writing misa may increase IALIGN,
@@ -10,7 +10,7 @@
 // Exit code (tohost = code<<1 | 1; x1 = tohost value at _test_exit), OR of:
 //   1: misa.C still 1 after csrc      2: IALIGN probe did not trap with cause 0 (IALIGN=16)
 //   4: an illegal probe had mtval == low 16 bits only    8: an illegal probe had another cause/mtval
-// Verdict: IALIGN=32 (bit 2 clear) and bit 4 set => non-conforming under current main.
+// Pass: code 0. Code 2 clear and code 4 set: mtval held only the 16-bit parcel with IALIGN = 32.
 #include "common.h"
   .option norvc
   .section .text.init
