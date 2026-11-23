@@ -1,5 +1,7 @@
 # Illegal-instruction mtval on a hart without C/Zca (IALIGN = 32)
 
+Issue: [tenstorrent/whisper#380](https://github.com/tenstorrent/whisper/issues/380).
+
 M-mode bare-metal test, RV64 and RV32, built without C. It executes three words whose low two bits are not 11
 (`0xABCD0004`, `0xABCD6101`, `0xABCD4002`; each low half is a reserved compressed encoding) and checks that the
 illegal-instruction trap reports the whole 32-bit word in mtval. It also checks that misa.C reads 0 and that a jalr
@@ -47,5 +49,5 @@ sail_riscv_sim --config-override sail-noc-override.json --trace-exception xtval-
 - `misa-c-cleared/`: the same check on riscv-arch-test's whisper-rv64-max / whisper-rv32-max configurations (C present, writable
   misa.C) after `csrc misa, 4`. `./run.sh path/to/whisper`; tohost = 9 (code 4) means mtval held the 16-bit parcel,
   tohost = 1 passes. Whisper a0288feb and 2ba694b: 9 on both.
-- `whisper-fix.patch`: the fix against a0288feb (truncate to 16 bits at fetch and in `illegalInst` only when Zca is
+- `whisper-fix.patch`: the fix ([tenstorrent/whisper#381](https://github.com/tenstorrent/whisper/pull/381)) against a0288feb (truncate to 16 bits at fetch and in `illegalInst` only when Zca is
   enabled). With it, both the no-C runs and the `misa-c-cleared` runs pass.

@@ -115,3 +115,4 @@ Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual 
 | [whisper#296](https://github.com/tenstorrent/whisper/issues/296) | [whisper-misa-h-clear-sret-spv-abort](whisper-misa-h-clear-sret-spv-abort/) |
 | [whisper#363](https://github.com/tenstorrent/whisper/issues/363) | [whisper-counters-fast-run](whisper-counters-fast-run/) |
 | [whisper#364](https://github.com/tenstorrent/whisper/issues/364) | [whisper-mip-mtip-read](whisper-mip-mtip-read/) |
+| [whisper#380](https://github.com/tenstorrent/whisper/issues/380) | [whisper-xtval-noc](whisper-xtval-noc/) |
