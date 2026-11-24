@@ -1,0 +1,93 @@
+
+/home/harris/act-wt/sim-review-1121/work/verify-v2/v2-u21w-05-ebreak-vs-vu.rv32.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80000000 <_start>:
+80000000:	00000297          	auipc	t0,0x0
+80000004:	09428293          	addi	t0,t0,148 # 80000094 <handler>
+80000008:	30529073          	csrw	mtvec,t0
+8000000c:	40000293          	li	t0,1024
+80000010:	3102b073          	csrc	0x310,t0
+80000014:	00000d97          	auipc	s11,0x0
+80000018:	00cd8d93          	addi	s11,s11,12 # 80000020 <_start+0x20>
+8000001c:	74446073          	csrsi	mnstatus,8
+80000020:	00000413          	li	s0,0
+80000024:	fff00293          	li	t0,-1
+80000028:	3b029073          	csrw	pmpaddr0,t0
+8000002c:	01f00293          	li	t0,31
+80000030:	3a029073          	csrw	pmpcfg0,t0
+80000034:	30201073          	csrw	medeleg,zero
+80000038:	68001073          	csrw	hgatp,zero
+8000003c:	28001073          	csrw	vsatp,zero
+80000040:	00001537          	lui	a0,0x1
+80000044:	80050513          	addi	a0,a0,-2048 # 800 <_start-0x7ffff800>
+80000048:	00000597          	auipc	a1,0x0
+8000004c:	00c58593          	addi	a1,a1,12 # 80000054 <vs_code>
+80000050:	0240006f          	j	80000074 <enter_virtual>
+
+80000054 <vs_code>:
+80000054:	00100413          	li	s0,1
+80000058:	00100073          	ebreak
+8000005c:	00300093          	li	ra,3
+80000060:	09c0006f          	j	800000fc <done>
+
+80000064 <vu_code>:
+80000064:	00200413          	li	s0,2
+80000068:	00100073          	ebreak
+8000006c:	00700093          	li	ra,7
+80000070:	08c0006f          	j	800000fc <done>
+
+80000074 <enter_virtual>:
+80000074:	000022b7          	lui	t0,0x2
+80000078:	80028293          	addi	t0,t0,-2048 # 1800 <_start-0x7fffe800>
+8000007c:	3002b073          	csrc	mstatus,t0
+80000080:	30052073          	csrs	mstatus,a0
+80000084:	08000293          	li	t0,128
+80000088:	3102a073          	csrs	0x310,t0
+8000008c:	34159073          	csrw	mepc,a1
+80000090:	30200073          	mret
+
+80000094 <handler>:
+80000094:	04040463          	beqz	s0,800000dc <skip>
+80000098:	342022f3          	csrr	t0,mcause
+8000009c:	00300313          	li	t1,3
+800000a0:	02629a63          	bne	t0,t1,800000d4 <bad>
+800000a4:	310022f3          	csrr	t0,0x310
+800000a8:	0072d293          	srli	t0,t0,0x7
+800000ac:	0012f293          	andi	t0,t0,1
+800000b0:	02028263          	beqz	t0,800000d4 <bad>
+800000b4:	00100313          	li	t1,1
+800000b8:	00641a63          	bne	s0,t1,800000cc <handler+0x38>
+800000bc:	00000513          	li	a0,0
+800000c0:	00000597          	auipc	a1,0x0
+800000c4:	fa458593          	addi	a1,a1,-92 # 80000064 <vu_code>
+800000c8:	fadff06f          	j	80000074 <enter_virtual>
+800000cc:	00100093          	li	ra,1
+800000d0:	0200006f          	j	800000f0 <done_m>
+
+800000d4 <bad>:
+800000d4:	00500093          	li	ra,5
+800000d8:	0180006f          	j	800000f0 <done_m>
+
+800000dc <skip>:
+800000dc:	000022b7          	lui	t0,0x2
+800000e0:	80028293          	addi	t0,t0,-2048 # 1800 <_start-0x7fffe800>
+800000e4:	3002a073          	csrs	mstatus,t0
+800000e8:	341d9073          	csrw	mepc,s11
+800000ec:	30200073          	mret
+
+800000f0 <done_m>:
+800000f0:	08000293          	li	t0,128
+800000f4:	3102b073          	csrc	0x310,t0
+800000f8:	0040006f          	j	800000fc <done>
+
+800000fc <done>:
+800000fc:	00001297          	auipc	t0,0x1
+80000100:	f0428293          	addi	t0,t0,-252 # 80001000 <tohost>
+
+80000104 <_test_exit>:
+80000104:	0012a023          	sw	ra,0(t0)
+80000108:	0002a223          	sw	zero,4(t0)
+8000010c:	ff9ff06f          	j	80000104 <_test_exit>
