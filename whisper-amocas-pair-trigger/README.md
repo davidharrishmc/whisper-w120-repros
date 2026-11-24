@@ -23,9 +23,11 @@ RV32 01a, store-address trigger (size 3) at A+4, amocas.d to A, compare equal
 RV64 01a (store-address at A+8) and 01b (store-data on the upper swap value), amocas.q
   Expected: as above
   Observed: amo.cpp:1420: ... Assertion `ok0 == ok1' failed (abort)
-RV64/RV32 01c, size-W store-address trigger at A
-  Expected: 0 breakpoints        Observed: 1 breakpoint
 ```
+
+Case 01c is a question, not part of the report: should an mcontrol6 trigger with size = XLEN at A match
+the 2*XLEN-bit pair CAS at A? Whisper matches it on the lower half; Sail and Imperas do not. Its check
+prints an `SA-MISMATCH` line on Whisper.
 
 ## How to run
 
@@ -36,10 +38,10 @@ RV64/RV32 01c, size-W store-address trigger at A
 Cases:
 - rv64 01a (store-address trigger on the upper half): `u04-atomics-whisper-01a.whisper-rv64-max.elf` with `whisper-rv64-max.json`
 - rv64 01b (store-data trigger on the upper swap value): `u04-atomics-whisper-01b.whisper-rv64-max.elf` with `whisper-rv64-max.json`
-- rv64 01c (size-64 trigger at A on amocas.q): `u04-atomics-whisper-01c.whisper-rv64-max.elf` with `whisper-rv64-max.json`
+- rv64 01c (question: size-64 trigger at A on amocas.q): `u04-atomics-whisper-01c.whisper-rv64-max.elf` with `whisper-rv64-max.json`
 - rv32 01a: `u04-atomics-whisper-01a.whisper-rv32-max.elf` with `whisper-rv32-max.json`
 - rv32 01b: `u04-atomics-whisper-01b.whisper-rv32-max.elf` with `whisper-rv32-max.json`
-- rv32 01c (size-32 trigger at A on amocas.d): `u04-atomics-whisper-01c.whisper-rv32-max.elf` with `whisper-rv32-max.json`
+- rv32 01c (question: size-32 trigger at A on amocas.d): `u04-atomics-whisper-01c.whisper-rv32-max.elf` with `whisper-rv32-max.json`
 
 Files:
 - `run.sh`: runs every case below on the Whisper binary given as argument.
