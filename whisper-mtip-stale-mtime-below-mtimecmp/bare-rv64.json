@@ -1,0 +1,5 @@
+{
+  "isa": "rv64i_zicsr",
+  "memmap": { "size": "0x100000000", "page_size": 4096 },
+  "clint": "0x2000000"
+}
