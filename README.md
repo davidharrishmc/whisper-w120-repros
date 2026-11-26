@@ -142,3 +142,4 @@ Reproducers for Whisper issues from a rule-by-rule audit against the ISA manual 
 | [whisper#409](https://github.com/tenstorrent/whisper/issues/409) | [whisper-hviprio1-reserved-bytes](whisper-hviprio1-reserved-bytes/) |
 | [whisper#410](https://github.com/tenstorrent/whisper/issues/410) | [whisper-iprio-array-no-imsic](whisper-iprio-array-no-imsic/) |
 | [whisper#432](https://github.com/tenstorrent/whisper/issues/432) | [whisper-mtip-stale-mtime-below-mtimecmp](whisper-mtip-stale-mtime-below-mtimecmp/) |
+| [whisper#434](https://github.com/tenstorrent/whisper/issues/434) | [whisper-ptw-access-fault-tinst](whisper-ptw-access-fault-tinst/) |
